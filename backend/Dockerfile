@@ -3,7 +3,7 @@ FROM node:25-alpine3.22
 WORKDIR /app
 COPY . .
 RUN npm install
-ENV port=3001
-ENV MONGO_URI=""
+#ENV port=3001
+#ENV MONGO_URI=""
 EXPOSE 3001
 CMD [ "node", "index.js" ]
